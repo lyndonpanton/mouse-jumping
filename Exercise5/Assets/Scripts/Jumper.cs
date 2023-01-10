@@ -7,6 +7,17 @@ using UnityEngine;
 /// </summary>
 public class Jumper : MonoBehaviour
 {
+    // Start is called before the first frame update
+    void Start()
+    {
+        Vector3 scale = transform.localScale;
+
+        scale.x *= 4;
+        scale.y *= 4;
+
+        transform.localScale = scale;
+    }
+
     // Update is called once per frame
     void Update()
     {
